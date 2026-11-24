@@ -1,0 +1,59 @@
+# Unity-ийн автоматаар үүсгэдэг хавтаснууд (Git-д оруулахгүй)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset Store tools
+/[Aa]ssets/AssetStoreTools*
+
+# IDE (Visual Studio, Rider)
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity meta for ignored dirs
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports
+sysinfo.txt
+
+# Build outputs
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Android keystore (нууц үгтэй гарын үсгийн файл, GitHub-д хэзээ ч оруулахгүй)
+*.keystore
+*.jks
+
+# Gradle / Android
+.gradle/
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/gradle*
+
+# OS
+.DS_Store
+Thumbs.db

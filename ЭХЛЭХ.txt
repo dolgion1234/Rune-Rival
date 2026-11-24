@@ -1,0 +1,52 @@
+RUNE RIVALS v1.0 - ЭХЛЭХ ЗААВАР (богино)
+=========================================
+Unity 6.6 (6000.6.10f1), Windows 11. Дэлгэрэнгүйг ЗААВАР.md-ээс уншина.
+
+A. ТӨСӨЛ ҮҮСГЭЖ ТОГЛОХ (10 минут)
+1. Unity Hub -> New project -> "Universal 2D" template сонгоно.
+   Project name: RuneRivals, Location: жишээ нь C:\Games -> Create project.
+   (Unity Cloud / Version Control холбох сонголт байвал болиулна.)
+2. Unity нээгдсэний дараа ХААНА.
+3. Zip-ийг задлаад доторх "Assets" хавтас, ".gitignore", ".gitattributes"-ыг
+   C:\Games\RuneRivals руу хуулна. "Replace / Merge" гэвэл Yes.
+   Үр дүн: C:\Games\RuneRivals\Assets\RuneRivals\... гэж байх ёстой.
+4. Unity-г нээнэ. "In App Purchasing" багц ӨӨРӨӨ суугаад 1-2 минут compile хийнэ.
+   Console дээр "In App Purchasing installed" гэж гарна.
+5. Game цонхны дээд талын "Free Aspect" -> "+" -> 1080 x 1920 нэмж сонгоно (босоо утас).
+6. PLAY дарна. Scene дээр юу ч тохируулах шаардлагагүй, тоглоом өөрөө үүснэ.
+   Нүүр дэлгэц -> BATTLE -> өрсөлдөгч хайна -> карт сонгож тулална.
+   Утасны "буцах" товч = компьютер дээр Esc.
+
+B. ТУРШИХ ЦЭС (дээд цэс "Rune Rivals" -> Test)
+- Give 5,000 Gold + 500 Gems : баатар нээх, түвшин ахиулах, дэлгүүр турших
+- Add 300 Trophies           : лиг ахиулж шинэ карт, слот нээгдэхийг харах
+- Skip Tutorial              : эхний зааврыг алгасах
+- Reset Save Data            : шинэ тоглогч болж эхнээс нь (Play-г зогсоогоод дахин дарна)
+Editor дотор худалдан авалт "хуурамч дэлгүүр"-ээр ажиллана (мөнгө төлөгдөхгүй).
+Зар одоогоор ТУРШИЛТЫН горимд: 3 секундын түр дэлгэц гарна.
+
+C. ANDROID ТОХИРГОО (1 товч)
+1. (Сонголттой) Assets/RuneRivals/Scripts/Core/GameConfig.cs -> PackageId-г
+   өөрийнхөөрөө солих, жишээ: com.tanainner.runerivals (Play-д гарсны дараа солих БОЛОМЖГҮЙ)
+2. Дээд цэс: Rune Rivals -> Setup Android (1 click)
+3. File -> Build Profiles -> Android -> Switch Platform
+4. Edit -> Project Settings -> Player -> Android -> Publishing Settings ->
+   Keystore Manager -> Create New -> Anywhere. Нууц үгээ 2 газар хадгална!
+5. File -> Build Profiles -> Android -> Build. Гарсан .aab-г Play Console-д ачаална.
+   Дараагийн шинэчлэл бүрийн өмнө: Rune Rivals -> Increase Version Code.
+
+D. GOOGLE PLAY ("store" хавтас)
+- store/icon_512.png                  -> App icon
+- store/feature_graphic_1024x500.png  -> Feature graphic
+- store/store-listing.md              -> Нэр, тайлбар, product ID-ууд
+- store/privacy-policy.html           -> Имэйлээ оруулаад вэбэд байршуулж, холбоосыг
+                                         GameConfig.PrivacyPolicyUrl болон Play Console-д тавина
+- Дэлгэцийн зураг: утсан дээр тоглож байгаад 4-6 screenshot авна.
+- Monetize -> Products: gems_small, gems_medium, gems_large, no_ads, starter_pack
+
+E. ЖИНХЭНЭ ЗАР (дараагийн алхам)
+Unity LevelPlay (Ads Mediation) холбоно. Үүнд LevelPlay самбараас App Key хэрэгтэй.
+App Key-ээ авсны дараа надад хэлээрэй, холбох кодыг нь бичээд өгнө (ЗААВАР.md, 7-р хэсэг).
+
+F. GIT
+GitHub Desktop -> Commit -> Push. Library хавтас Git-д орохгүй (зөв).
